@@ -66,9 +66,10 @@ $(function() {
                         return layer.msg("登录失败！");
                     }
                     layer.msg("登录成功");
-                    console.log(res.token);
-                    console.log($("#loginForm").serialize());
-                    // location.href = "/index.html";
+                    // console.log(res.token);
+                    localStorage.setItem("token", res.token)
+                        // console.log($("#loginForm").serialize());
+                    location.href = "/index.html";
                 }
             });
         });
