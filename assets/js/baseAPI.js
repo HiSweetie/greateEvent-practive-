@@ -13,7 +13,7 @@ $.ajaxPrefilter(function(options) {
 
     // 全局统一挂载complete
     options.complete = function(res) {
-        console.log(res);
+        // console.log(res);
         // 你向ajax后台的程序发送xmlhttp请求的时候, 后台程序接到请求会进行处理,处理结束后,可以返回一串数据给前台,这个就是responseText. 
         if (res.responseJSON.status === 1 && res.responseJSON.message === '身份认证失败！') {
             localStorage.removeItem("token");

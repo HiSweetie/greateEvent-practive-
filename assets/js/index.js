@@ -21,7 +21,7 @@ function getUserInfo() {
                 // console.log(res.status);
                 return layui.layer.msg("获取用户信息失败！")
             }
-            console.log(res);
+            // console.log(res);
             renderAvater(res.data);
         }
     })
@@ -31,8 +31,6 @@ function renderAvater(userInfo) {
     var name = userInfo.nickname || userInfo.username;
     // 设置欢迎文本
     $("#welcome").html("欢迎&nbsp;&nbsp;" + name);
-    console.log(typeof(name));
-    console.log(name[0]);
     // 渲染图片
     if (userInfo.user_pic !== null) {
         $(".layui-nav-img").attr('src', userInfo.user_pic).show();
