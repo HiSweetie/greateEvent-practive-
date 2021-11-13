@@ -1,0 +1,71 @@
+.previewImg {}
+
+.cuttingArea .row1 .row1Left {
+    width: 45%;
+    display: inline-block;
+}
+
+.row1 {
+    display: flex;
+    flex-direction: row;
+}
+
+.row1Left img {
+    width: 100%;
+    /* height: 100%; */
+}
+
+.row1Right {
+    display: inline-block;
+    width: 35%;
+    height: 320px;
+    position: relative;
+}
+
+.previewArea {
+    display: flex;
+    flex-direction: column;
+}
+
+.previewArea>div {
+    height: 110px;
+    position: relative;
+}
+
+.size {
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: -20px;
+    display: block;
+}
+
+.previewArea .preview {
+    overflow: hidden;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.preview1 {
+    width: 100px;
+    height: 100px;
+}
+
+.preview2 {
+    width: 50px;
+    height: 50px;
+    top: 50%;
+}
+
+.row2 {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#inputFile {
+    display: none;
+}

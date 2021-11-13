@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/assets/lib/layui/css/layui.css">
+    <link rel="stylesheet" href="/assets/lib/cropper/cropper.css">
+    <link rel="stylesheet" href="/assets/css/user/user_avatar.css">
+</head>
+
+<body>
+    <div class="layui-card">
+        <div class="layui-card-header">更换头像</div>
+        <div class="layui-card-body previewImg">
+            <div class="cuttingArea">
+                <div class="row1">
+                    <div class="row1Left">
+                        <img src="../Inception.jpeg" id="avatar" alt="">
+                    </div>
+                    <div class="row1Right">
+                        <div class="previewArea">
+                            <div>
+                                <div class="preview1 preview">
+
+                                </div>
+                                <p class="size">100*100</p>
+                            </div>
+                            <div>
+                                <div class="preview2 preview">
+
+                                </div>
+                                <p class="size">50*50</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row2">
+                    <input type="file" name="" id="inputFile" accept="image/gif,image/jpeg,image/jpg,image/png,image/svg">
+                    <button class="layui-btn" id="chooseImg">选择图片</button>
+                    <button class="layui-btn" id="uploadAvatar">上传头像</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/assets/lib/jquery.js"></script>
+    <script src="/assets/lib/layui/layui.all.js"></script>
+    <script src="/assets/js/baseAPI.js"></script>
+    <script src="/assets/lib/cropper/Cropper.js"></script>
+    <script src="/assets/lib/cropper/jquery-cropper.js"></script>
+    <script src="/assets/js/user/user_avatar.js"></script>
+</body>
+
+</html>
